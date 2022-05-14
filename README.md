@@ -15,12 +15,35 @@ npm install --save rez-list
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'rez-list'
+import RezList from 'rez-list'
 import 'rez-list/dist/index.css'
 
 class Example extends Component {
+  const columns = [
+    {
+        name: 'Title',
+        selector: row => row.title,
+    },
+    {
+        name: 'Year',
+        selector: row => row.year,
+    },
+];
+
+const data = [
+    {
+        id: 1,
+        title: 'Beetlejuice',
+        year: '1988',
+    },
+    {
+        id: 2,
+        title: 'Ghostbusters',
+        year: '1984',
+    },
+]
   render() {
-    return <MyComponent />
+    return <RezList columns={columns} data={data}/>
   }
 }
 ```
