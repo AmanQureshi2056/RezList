@@ -1,21 +1,12 @@
-import React from 'react'
-import DataTable from 'react-data-table-component'
-// import styles from './styles.module.css'
+import { RezForm } from './RezForm'
+import { RezList } from './RezList'
+import { RezMenu } from './RezMenu'
+import { RezTab } from './RezTab'
 
-export const RezList = ({columns, data }) => {
-  return <DataTable
-            columns={columns}
-            data={data}
-        />
-}
+export {RezForm,RezList,RezMenu,RezTab}
 
-export const RezTab = () => {
-  return <div>Tabs</div>
-}
 
-export const RezMenu = () => {
-  return <div>Menu</div>
-}
-export const RezForm = () => {
-  return <div>Form</div>
-}
+
+
+
+
