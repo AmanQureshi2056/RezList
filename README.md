@@ -1,22 +1,22 @@
-# rez-list
+# rez-utils
 
 > Made with create-react-library
 
-[![NPM](https://img.shields.io/npm/v/rez-list.svg)](https://www.npmjs.com/package/rez-list) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/rez-list.svg)](https://www.npmjs.com/package/rez-utils) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save rez-list
+npm install --save rez-utils
 ```
 
 ## Usage
-
+### RezList
 ```jsx
 import React, { Component } from 'react'
 
-import RezList from 'rez-list'
-import 'rez-list/dist/index.css'
+import {RezList} from 'rez-utils'
+import 'rez-utils/dist/index.css'
 
 class Example extends Component {
   const columns = [
@@ -44,6 +44,21 @@ const data = [
 ]
   render() {
     return <RezList columns={columns} data={data}/>
+  }
+}
+```
+
+### RezForm
+```jsx
+import React, { Component } from 'react'
+
+import {RezForm} from 'rez-utils'
+import 'rez-utils/dist/index.css'
+
+class Example extends Component {
+
+  render() {
+    return <RezForm data={data}/>
   }
 }
 ```
